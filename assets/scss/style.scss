@@ -1,0 +1,229 @@
+@import './abstracts/varialbles';
+@import './mixins/breakpoints';
+@import './abstracts/common';
+@import './includes/header';
+@import './includes/footer';
+// section1 start=========================================
+.section1 {
+    margin: 15px;
+    align-items: center;
+    font-size: 27px;
+    .file-p3 h2{
+        font-family: 'Baskervville', serif;
+        color: #3d72a8;
+         margin-top: 30px;
+         margin-bottom: 20px;
+         padding: 20px 37px;
+    }
+    .file-p3{
+        .p{
+            padding: 5px 37px;
+        }
+    }
+}
+   .section3{
+        .btn{
+            background-color: #3d72a8;
+            padding: 10px;
+            font-size: 20px;
+            margin-top: 30px;
+            color: white;
+        }
+    }
+    .section2 {
+        padding: 20px;
+        @include media-min-lg {
+            display: flex;
+            justify-content: space-between;
+        }
+        .section p{
+            padding: 20px;
+        }
+        h2{
+            color: #3d72a8;
+            font-family: 'Baskervville', serif;
+            font-size: 30px;
+        }
+    }
+    .section3 {
+        padding: 20px;
+        @include media-min-lg {
+            display: flex;
+            justify-content: space-between;
+        }
+        h2{
+            color: #3d72a8;
+            font-family: 'Baskervville', serif;
+            font-size: 30px;
+        }
+}
+// section1 end==================================================================
+// image sectin start===================================================================
+.image-section{
+    padding: 15px;
+    background-image: url(/public/images/infinite-loop-02-mobile.jpg);
+     background-size: cover;;
+    @include media-min-lg{
+        background-image: url(/public/images/infinite-loop-02.jpg);
+         background-size: cover;
+         height: 100vh;
+    }
+    .center{
+        margin-bottom: 8rem;
+        text-align: center;
+        padding: 15px;
+        color: white;
+       h3{
+        font-size: 35px;
+        margin-top: 4rem;
+        margin-bottom: 30px;
+       }
+    }
+    .images{
+        color: white;
+        text-align: center;
+        .img-1{
+            img{
+                border-radius: 100px;
+                
+            }
+        }
+        .img-2{
+            img{
+                border-radius: 120px;
+            }
+        }
+        .img-3{
+            img{
+                border-radius: 100px;
+            }
+        }
+        p{
+            text-align: left;
+            padding-left: 30px;
+        }
+        .img-pr{
+            padding: 20px;
+            text-align: right;
+        }
+        @include media-min-lg{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+}
+// image section end===========================================================
+//gallery section strrat /========================================================
+.gallery{
+    padding: 15px;
+    .gal{
+        text-align: center;
+        h3{
+            font-family: 'Baskervville', serif;
+            color: #3d72a8;
+            font-size: 35px;
+            margin-top: 4rem;
+            margin-bottom: 20px;
+
+        }
+        .gal-p{
+            padding-bottom: 4rem;
+        }
+    }
+    .tn-img{
+        text-align: center;
+        // padding: 20px
+        .sub-img{
+            width: 100%;
+            padding: 20px;
+            @include media-min-lg{
+                 padding: 5px;
+            }
+        }
+        @include media-min-lg{
+            display: flex;
+            justify-content: space-evenly;
+             margin-left: 20px;
+             margin-bottom: 75px;
+        }
+        
+    }
+}
+// gallery sec end=======================================
+// footer sec start========================================
+.footer{
+    background-image:url(/public/images/infinite-loop-03.jpg) ;
+    background-size: cover;
+    text-align: center;
+    padding: 15px;
+    .footer-hp{
+        margin-top: 40px;
+        margin-bottom: 30px;
+        color: white;
+        h3{
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+        p{
+            padding: 5px;
+        }
+        @include media-min-lg{
+            text-align: center;
+        }
+    }
+    .f-main{
+        input,textarea{
+            background-color: transparent;
+            color: white;
+            border: 1px solid whitesmoke;
+            width: 90%;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .btn-last{
+             display: flex;
+             align-items: flex-start;
+             background-color: #3d72a8;
+             border-radius: 5px;
+             width: 50%;
+             padding: 5px;
+              margin: 10px;
+             font-size: 20px;
+             color: white;
+        }
+    }
+    .f-icons{
+        .ficon-1{
+             display: flex;
+             margin-left: 80px;
+             padding: 20px;
+             font-size: 20px;
+            p{
+                 margin-left: 15px;
+            }
+        }
+        p{
+            color: white;
+        }
+    }
+    .dis{
+        @include media-min-lg{
+            display: flex;
+            margin-left: 30rem;
+             margin-top: 5rem;
+        }
+    }
+    .bottom{
+        text-align: center;
+        color: white;
+        margin-top: 40px;
+        @include media-min-lg{
+            text-align: center;
+        }
+    }
+}
+// footer section end==========================
+
+        
+    

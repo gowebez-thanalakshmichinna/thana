@@ -1,0 +1,63 @@
+// header section start============================================
+.wrapper {
+    .banner-wrapper {
+        background-image: url(../../../public/images/infinite-loop-01.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        @include media-min-lg {
+            height: 80vh;
+        }
+    }
+    .banner {
+        @include media-min-lg {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .ban-head {
+            padding: 15px;
+            color: $clr-white;
+        }
+        .items {
+            list-style-type: none;
+            text-align: center;
+             @include media-min-lg {
+                display: inline-flex;
+                text-align: center;
+                list-style-type: none;
+            }
+            .list {
+                padding: 10px;
+                color: $clr-white;
+            }
+        }
+    }
+    .ban-head2 {
+        padding: 10px;
+        color: $clr-white;
+        text-align: center;
+        @include media-min-lg {
+            margin-top: 200px;
+        }
+    }
+    .ban-para2 {
+        color: $clr-white;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .ban-icon{
+        text-align: center;
+        font-size: 30px;
+        color: #3d72a8;
+        @include media-min-lg{
+            text-align: center;
+            margin-top: 2rem;
+        }
+        // margin: 90px;
+        // padding: 50px;
+    }
+}
+// header section end================================================
